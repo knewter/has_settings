@@ -1,0 +1,7 @@
+The has_settings plugin is extremely basic.  It just allows you to easily store a settings hash against any activerecord model.
+
+class SomeClass < ActiveRecord::Base
+  has_settings # and that's it, really
+end
+
+Make sure to run the plugin migrations.  Also this will only work where Rails Engines is, unless you copy over the model to your app's models dir.
